@@ -1,0 +1,34 @@
+{
+    "Routes": [
+        {
+            "Retries": 3,
+            "ServeNodes": [
+                "relay+tls://:50010/172.247.168.112:1042"
+            ]
+        },    	
+        {
+            "Retries": 3,
+            "ServeNodes": [
+                "relay+tls://:50001/203.218.243.136:10334"
+            ]
+        },
+         {
+            "Retries": 3,
+            "ServeNodes": [
+                "relay+tls://:50002/42.3.73.194:80"
+            ]
+        },
+         {
+            "Retries": 3,
+            "ServeNodes": [
+                "relay+tls://:50003/119.237.148.122:80"
+            ]
+        },
+         {
+            "Retries": 3,
+            "ServeNodes": [
+                "relay+tls://:50004/210.3.119.178:80"
+            ]
+        }        
+    ]
+}

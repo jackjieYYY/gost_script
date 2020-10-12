@@ -1,0 +1,18 @@
+version: "3.2"
+services:
+  redirect:
+    container_name: gost
+    image: ginuerzh/gost
+    restart: always
+    network_mode: "host"
+    command:
+      -C /bin/gost.json
+      #- "-L=tcp://:1042/172.247.168.112:1042"
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
+    volumes:
+      - type: bind
+        source: ./gost.json
+        target: /bin/gost.json
